@@ -1,0 +1,24 @@
+{
+  "name": "yassirkarmaticv",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YassirKarmati/YassirKarmatiCV.git"
+  },
+  "author": "Yassir Karmati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YassirKarmati/YassirKarmatiCV/issues"
+  },
+  "homepage": "https://github.com/YassirKarmati/YassirKarmatiCV#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3",
+    "twig": "^1.15.4"
+  }
+}
