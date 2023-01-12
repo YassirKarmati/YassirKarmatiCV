@@ -1,6 +1,6 @@
 @font-face {
   font-family: "League Spartan";
-  src: url(/assets/Fonts/LeagueSpartan-VariableFont_wght.ttf) format('truetype');
+  src: url(/assets/Fonts/LeagueSpartan-VariableFont_wght.ttf) format("truetype");
 }
 
 body {
@@ -9,18 +9,45 @@ body {
 }
 
 .top_navbar {
-    font-family: 'League Spartan', serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-    padding: 15px;
+  font-family: "League Spartan", serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding: 40px 50px 40px 50px;
 }
 
 .top_navbar a {
   color: aliceblue;
   text-decoration: none;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
+}
+
+.intro {
+  width: 100%;
+  background-image: url(/img/Gaming-rafiki.svg);
+  background-position: center;
+  position: absolute;
+}
+
+.imgIntro {
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: auto;
+}
+
+.textPresentation {
+  background: rgba(235, 195, 116, 0.48);
+  backdrop-filter: blur(22px);
+
+  position: relative;
+  width: 809px;
+  height: 379px;
+  left: 276px;
+  top: 442.5px;
 }
