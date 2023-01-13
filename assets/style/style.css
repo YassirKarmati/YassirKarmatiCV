@@ -29,25 +29,85 @@ body {
   width: 100%;
   background-image: url(/img/Gaming-rafiki.svg);
   background-position: center;
-  position: absolute;
+  background-repeat: no-repeat;
 }
 
-.imgIntro {
-  width: 100%;
-  opacity: 0.6;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: auto;
+.introTitle {
+  position: relative;
+  margin: auto;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introTitle img {
+  height: 20%;
+  width: 20%;
 }
 
 .textPresentation {
-  background: rgba(235, 195, 116, 0.48);
-  backdrop-filter: blur(22px);
+  background: rgb(0, 176, 255);
+  background: linear-gradient(
+    80deg,
+    rgba(0, 176, 255, 1) 0%,
+    rgba(212, 192, 166, 0.700717787114846) 48%,
+    rgba(48, 69, 201, 1) 95%,
+    rgba(255, 255, 255, 0.4990371148459384) 100%
+  );
+  font-family: "League Spartan", sans-serif;
+  color: #1e1e1e;
+  font-weight: bold;
+  font-size: larger;
 
-  position: relative;
-  width: 809px;
-  height: 379px;
-  left: 276px;
-  top: 442.5px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.skills {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 40px;
+}
+
+.skills img {
+  height: 100px;
+  width: auto;
+}
+
+.skills h3 {
+  padding-bottom: 20px;
+}
+
+.skillsFront {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.skillsBack {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.experience h3{
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+.experience{
+  margin: auto;
+}
+
+.projects h3{
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
