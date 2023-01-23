@@ -1,8 +1,28 @@
 @media (max-width: 900px) {
 
+.intro{
+    background-image: none;
+    justify-content: center;
+    text-align: center;
+}
 
+.introTitle{
+    flex-direction: column;
+}
 
-
+.introTitle img{
+    height: 70%;
+    width: 70%;
+    margin: auto;
+}
     
     
+.skillsFront img{
+    padding: 15px;
+  }
+  
+  .skillsBack img{
+    padding: 15px;
+  }
+  
 }
