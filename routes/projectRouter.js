@@ -1,7 +1,8 @@
 const express = require("express");
 const projectRouter = express.Router();
-
+const ProjectModel = require('../models/project.js')
 const nodemailer = require('nodemailer');
+const { find } = require("../models/project");
 const transporter = nodemailer.createTransport({ 
 service : 'gmail',
 auth : {
@@ -12,11 +13,14 @@ tls: {rejectUnauthorized: false}
 
 })
 
-projectRouter.get("/", async (req, res) => {
+projectRouter.get("/home", async (req, res) => {
   try {
-    
-    res.render("index.twig");
+    let projects = await ProjectModel.find();
+    res.render("index.twig", {
+      projects : projects
+    });
   } catch (err) {
+    console.error(err)
     res.send(err);
   }
 });
@@ -34,6 +38,7 @@ projectRouter.post("/sendMail", async(req, res) =>{
     res.send(err);
   }
 })
+
 
 
 

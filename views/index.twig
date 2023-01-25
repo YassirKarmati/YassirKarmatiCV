@@ -155,9 +155,14 @@
 					Mes réalisations
 				</h3>
 
-				<h3>
-					Coming soon ...
-				</h3>
+				{% for project in projects %}
+					<div> 
+					<h3> {{ project.name }}</h3>
+					<h3> {{ project.description }}</h3>
+					<img src="./img/stock_img/{{ project.image }}">
+					<h3> {{ project.githubLink }}</h3>
+					</div>
+				{% endfor %}
 			</div>
 
 

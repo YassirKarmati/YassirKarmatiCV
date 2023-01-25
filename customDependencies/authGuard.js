@@ -1,11 +1,13 @@
-let connectModel= require('../models/connect')              
+let userModel= require('../models/user.js')              
 
-let authGuard = async(req,res,next)=>{              
-    let user = await connectModel.findOne({_id: req.session.userId})
+let authGuard = async(req,res,next)=>{      
+
+    let user = await userModel.findOne({_id: req.session.userId})
+
     if (user) {
-        next()
+        next();
     }else{
-        res.redirect('/projects')
+        res.redirect('/home');
     }
 }
 

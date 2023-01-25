@@ -7,7 +7,15 @@ const ProjectSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        required: [true, 'Pas de prénom'],
+        required: [true, 'Pas de description'],
+    },
+    image:{
+        type: String,
+        required:[true, "Pas d'image lié"]
+    },
+    githubLink:{
+        type: String,
+        required:[true, 'Pas de repository lié']
     }
 })
 
